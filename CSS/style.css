@@ -64,12 +64,12 @@ h3{
 }
 .header{
     text-align: center;
-    width: 100%;
+    width: 1000px;
     margin: auto;
     height: auto;
     display: flex;
     cursor: default;
-    justify-content: space-evenly;
+    justify-content: space-between;
     max-width: 1360px;
 }
 .header h1{
@@ -93,12 +93,10 @@ h3{
 }
 .contact-tooltip:hover{
     background-color: var(--dark-grey);
-
 }
 .contact-tooltip{
     display: flex;
     flex-direction: column;
-    position: absolute;
     margin: auto;
     width: fit-content;
     left: 0;
@@ -110,11 +108,13 @@ h3{
     visibility: hidden;
     gap: 8px;
     background-color: var(--black-grey);
+
 }
-.cv-download{
+.portfolio-downloads{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    text-align: center;
     margin-top: 4rem;
 }
 .downloads{
@@ -122,18 +122,29 @@ h3{
     text-align: center;
     justify-content: center;
     background: linear-gradient(var(--teal), var(--light-purple));
-    border-radius: 32px;
+    border-radius: 1000px;
     border-top-style: solid;
     border-width: 2px;
-    width: 64px;
   	transition: 200ms;
-  	transform: scale(1)
+  	transform: scale(1);
+    padding: 0.5rem;
+}
+.downloads img{
+    width: 48px;
+    height: 48px;
 }
 .downloads:hover{
     transform: scale(112%);
     transition: 0.2s;
     transition-timing-function: ease-out;
     box-shadow: 0 0 16px var(--light-purple);
+}
+.download-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 1rem
 }
 
 .portfolio-piece-container{
@@ -204,8 +215,10 @@ h3{
     position: relative;
     bottom: 2rem;
     right: 1rem;
-    text-shadow: 2px 2px 2px  var(--black-grey);
+    text-shadow: 2px 2px 4px var(--black-grey);
     pointer-events: none;
+    font-weight: bold;
+    color: var(--off-white)
 }
 
 /* about me */
@@ -474,7 +487,7 @@ h3{
 }
 .SoMe-links img{
   transform: scale(1);
-  transition. 0.2s;
+  transition: 0.2s;
 }
 
 /* footer */

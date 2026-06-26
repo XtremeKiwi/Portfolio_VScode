@@ -12,7 +12,6 @@ function mediaqueryHeaderName() {
     }
 }
 
-mediaqueryHeaderName()
 
 x.addEventListener("change", function(){
     mediaqueryHeaderName();

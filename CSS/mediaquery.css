@@ -10,6 +10,10 @@
 /* cv and fact */
 
 @media screen and (max-width: 1366px) {
+
+    .header{
+        width: 800px;
+    }
     /* cv and fact */
     .cv-content{
         width: 100%;
@@ -33,11 +37,20 @@
 
 @media screen and (max-width: 980px ){
     /* cv download link */
-    .filler{
-        width: 0
-    }
     .header{
         display: block;
+        width: 100%;
+    }
+    .header-name{
+        font-size: 40px;
+        padding-bottom: 0.5rem;
+    }
+    .downloads{
+        justify-content: space-evenly;
+    }
+    .portfolio-downloads{
+        width: 360px;
+        margin: auto;
     }
 
     /* portfolio piece top */
@@ -112,6 +125,25 @@
 
 
 @media screen and (max-width: 380px){
+
+    .header{
+        width: 100%;
+    }
+    .marquee-info{
+        width: 60%
+    }
+    .contact-tooltip{
+        font-size: 12px;
+    }
+    .portfolio-downloads{
+        font-size: 12px;
+        padding: 0;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .contact-tooltip{
+        display: none;
+    }
     /* portfolio piece top */
     .portfolio-piece{
         width: 240px;

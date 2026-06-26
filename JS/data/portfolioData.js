@@ -1,5 +1,10 @@
 //UI %% Webdev //
 const portfolioPiece1 = [{
+    name: 'Zealand Butterfly',
+    img: 'img/portfolioImgs/zealandButterfly/Butterfly logo medium white.png',
+    alt: 'Butterfly',
+    href: 'portfolioPiecesDir/zealandbutterfly.html'
+    },{
     name: 'GradeAid',
     img: 'img/portfolioImgs/gradeAid/GradeAid thumbnail 6.png',
     alt: 'GradeAid',

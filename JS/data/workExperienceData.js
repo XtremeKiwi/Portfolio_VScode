@@ -14,7 +14,7 @@ const workExperienceData =
     {
     companyName: "Dysphoria Designs",
     jobTitle: "",
-    date: "Nov 2023 - I dag",
+    date: "Nov 2023 - I dag (On and off)",
     jobDescription: "Mit eget hobby firma hvor jeg designer og producere diverse små gadgets i form af smykker, \n" +
                     "hjemme-dekoration og miniature, der sælges enten som fysiske\n" +
                     "produkter eller STL filer."
