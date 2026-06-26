@@ -1,0 +1,501 @@
+:root{
+    --dark-purple: #190E1C;
+    --light-purple: #C069D6;
+    --teal: #17B890;
+
+
+    --white: #FFFFFF;
+    --off-white: #D9D9D9;
+    --light-grey: #555555;
+    --grey: #3F3F3F;
+    --dark-grey: #383838;
+    --black-grey: #1E1E1E;
+}
+
+body{
+    background-color: var(--black-grey);
+    letter-spacing: 1px;
+}
+*{
+    color: #FFFFFF;
+    font-family: "Orbitron", "sans-serif";
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+h1{
+    font-size: 54px;
+    font-weight: normal;
+}
+h3{
+    font-weight: normal;
+}
+
+/* first part of portfolio */
+.portfolio-container{
+    width: 100%;
+    height: auto;
+    background-color: var(--black-grey);
+        margin:auto;
+    overflow: hidden;
+    background-image: url("../img/batthern.png");
+  	background-attachment: fixed;
+}
+.marquee-info{
+    background-image:url("../img/gplay.png");
+    background-color: var(--black-grey);
+    padding: 1rem 0;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--white);
+    color: var(--white);
+    width: 280px;
+    border-radius: 1rem;
+    cursor: pointer;
+    opacity: 100%;
+	transition: 200ms;
+  	transform: scale(1)
+}
+.marquee-info:hover{
+    background-color: var(--dark-grey);
+    transition: 0.2s;
+    transform: scale(105%);
+    box-shadow: 0 0 12px 4px var(--light-purple);
+}
+.header{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    cursor: default;
+    justify-content: space-evenly;
+    max-width: 1360px;
+}
+.header h1{
+    padding-top: 4rem;
+    font-weight: normal;
+    color: var(--white);
+    text-shadow: 1px 2px 4px var(--black-grey);
+}
+.filler{
+    width: 134.033px
+}
+.title-and-contact{
+    display: block;
+}
+.contact-info{
+    margin: auto;
+    text-shadow: 1px 1px 2px var(--black-grey);
+}
+.contact-info:hover .contact-tooltip{
+    visibility: visible;
+}
+.contact-tooltip:hover{
+    background-color: var(--dark-grey);
+
+}
+.contact-tooltip{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: auto;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    border-style: none solid solid solid;
+    border-width: 2px;
+    border-radius: 0 0 8px 8px;
+    visibility: hidden;
+    gap: 8px;
+    background-color: var(--black-grey);
+}
+.cv-download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+.downloads{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(var(--teal), var(--light-purple));
+    border-radius: 32px;
+    border-top-style: solid;
+    border-width: 2px;
+    width: 64px;
+  	transition: 200ms;
+  	transform: scale(1)
+}
+.downloads:hover{
+    transform: scale(112%);
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+    box-shadow: 0 0 16px var(--light-purple);
+}
+
+.portfolio-piece-container{
+    margin: 64px auto;
+    display: grid;
+    grid-template-areas:
+            "area1 area2"
+            "area3 area4";
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.portfolio-wrapper h3{
+    display: flex;
+    text-shadow: 1px 1px 2px var(--black-grey);
+    justify-content: center;
+    width: 300px;
+    margin: auto;
+    padding: 2px;
+}
+.UI-webdev{
+    grid-area: area1;
+}
+.threedee{
+    grid-area: area2;
+}
+.graphic-design{
+    grid-area: area3;
+}
+.concept-art{
+    grid-area: area4;
+}
+.portfolio-piece{
+    width: 360px;
+    height: 128px;
+    background-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2rem 2rem 2rem 2rem;
+    border-color: var(--white);
+    margin: 16px;
+    text-align: right;
+    cursor: pointer;
+    transition: 0.2s;
+    overflow: hidden;
+}
+.portfolio-piece:hover{
+    transform: scale(105%);
+    transition-timing-function: ease-out;
+    border-color: var(--black-grey);
+    box-shadow: 0 0 12px 4px var(--light-purple);
+}
+.portfolio-image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 90%;
+    transition: 0.2s;
+}
+.portfolio-image:hover{
+    opacity: 100%;
+    transform: scale(110%);
+}
+.portfolio-wrapper{
+    padding-top: 16px;
+}
+.portfolio-piece p{
+    position: relative;
+    bottom: 2rem;
+    right: 1rem;
+    text-shadow: 2px 2px 2px  var(--black-grey);
+    pointer-events: none;
+}
+
+/* about me */
+
+.about-me-container{
+    width: 100%;
+    height: auto;
+    background-color: var(--black-grey);
+    border-color: var(--white);
+    border-style: solid none solid none;
+    border-width: 2px;
+}
+.about-me-wrapper{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.about-me-intro{
+    width: 540px;
+    height: auto;
+    /*background-image: linear-gradient(var(--light-purple) 20%, var(--black-grey) 100%);*/
+    margin:  4rem auto 0 auto;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem 1rem 0 0;
+    border-style: solid solid none solid;
+    border-color: var(--white);
+    border-width: 2px;
+    text-shadow: 1px 2px 4px var(--black-grey);
+    background-image:url("../img/batthern.png");
+    background-color: var(--black-grey);
+    background-attachment: fixed;
+}
+.about-me-skills{
+    margin:  0 auto 4rem auto;
+    width: 900px;
+    height: auto;
+    background-color: var(--black-grey);
+    background-image: url("../img/gplay.png");
+    box-shadow: 8px 8px 16px var(--light-purple);
+    border-radius: 32rem 1rem 1rem 32rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--white);
+    display: grid;
+    grid-template-areas:
+            "image adobe threeD programming other";
+    gap: 2rem;
+    padding: 2rem 2rem;
+    justify-content: center;
+}
+.about-me-image-container{
+    align-items: center;
+    display: flex;
+}
+.about-me-image{
+
+    background-color: #555555;
+    height: 256px;
+    width: 256px;
+    object-fit: cover;
+    border-radius: 32rem;
+    border-style: solid;
+    border-width: 2px;
+    grid-area: image;
+    justify-content: center;
+}
+.image{
+    grid-area: image;
+}
+.adobe{
+    grid-area: adobe;
+}
+.threeD{
+    grid-area: threeD;
+}
+.programming{
+    grid-area: programming;
+}
+.other{
+    grid-area: other;
+}
+.about-me-skill-example{
+    line-height: 2rem;
+    width: 100%;
+}
+.about-me-skill-example h3{
+    padding-top: 1rem
+}
+.about-me-skill-example ul{
+    list-style: circle;
+}
+
+/* cv and facts*/
+
+.cv-container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    grid-area: cv;
+}
+.cv-wrapper{
+    margin: auto;
+    padding: 2rem 0;
+    height: auto;
+}
+.cv-wrapper h2{
+    padding-bottom: 1rem;
+    color: var(--white)
+}
+.cv-content{
+    width: 720px;
+    height: auto;
+    background-color: var(--black-grey);
+    margin:  0 auto 2rem auto;
+    border-width: 2px;
+    border-radius: 4px;
+    border-style: solid solid none solid;
+    border-color: var(--white);
+    box-shadow: 8px 8px 16px var(--light-purple);
+}
+.cv-section{
+    width: 100%;
+    height: auto;
+    background-color: var(--grey);
+}
+.cv-section-title-role-date{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--light-grey);
+    align-items: center;
+    background-image:url("../img/gplay.png");
+}
+.cv-section-title-role{
+    padding: 1rem;
+}
+.cv-section-title-role p{
+    color: var(--black-grey);
+    background-color: var(--off-white);
+    width: 200px;
+    border-radius: 32rem;
+    text-align: center;
+    margin: 2px;
+    box-shadow: 2px 2px 4px var(--black-grey);
+}
+.cv-section-date{
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem;
+}
+.cv-role{
+    display: block;
+}
+.cv-section-text{
+    padding: 1rem 1rem 2rem 1rem;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: var(--white);
+}
+.cv-and-fact-container{
+    display: grid;
+    grid-template-areas:
+            "cv fact";
+    width: 1366px;
+    margin: auto;
+}
+.cv-and-fact-background{
+    width: 100%;
+    margin: auto;
+    /*background-image: url("../img/batthern.png");*/
+      background-attachment: fixed;
+}
+ /* facts */
+.fact-container{
+    width: 100%;
+    height: auto;
+    grid-area: fact;
+
+}
+.fact-wrapper{
+    width: 400px;
+    padding: 2rem 0 0 0;
+}
+.fact-wrapper h2{
+    padding-bottom: 1rem;
+    color: var(--white)
+}
+.fact-list{
+    height: auto;
+    padding: 2rem 2rem;
+    margin: 0 auto 3rem 0;
+    border-style: solid;
+    border-color: var(--white);
+    border-width: 2px;
+    border-radius: 1rem;
+    background-color: var(--black-grey);
+    background-image: url("../img/gplay.png");
+    box-shadow: 8px 8px 16px var(--light-purple);
+
+}
+.fact-list-items{
+    line-height: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    list-style: circle;
+}
+
+/* other experience */
+.other-experience-container{
+    width: 100%;
+    height: auto;
+
+}
+.other-experience-wrapper{
+    width: 720px;
+    margin:  0 auto 4rem auto;
+}
+.other-experience-wrapper h2{
+    margin-bottom: 1rem;
+}
+.other-experience-content{
+    background-color: var(--grey);
+    margin:  0 auto 2rem auto;
+    border-width: 2px;
+    border-radius: 4px;
+    border-style: solid solid none solid;
+    border-color: var(--white);
+    box-shadow: 8px 8px 16px var(--light-purple);
+
+}
+.other-experience-text{
+    padding: 1rem;
+    background-image: url("../img/gplay.png");
+    background-color: var(--light-grey);
+
+}
+.other-experience-description{
+    padding: 1rem;
+    border-bottom-style: solid;
+    border-width: 2px;
+}
+
+/* SoMe */
+.SoMe-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem 2rem;
+    gap: 4rem;
+    border-top-style: solid;
+    border-width: 2px;
+    border-color: var(--white);
+    background-color: var(--black-grey);
+}
+.SoMe-container img{
+    width: 64px;
+    background: linear-gradient(var(--teal), var(--light-purple));
+    border-radius: 32px;
+}
+.SoMe-links:hover img{
+    transform: scale(112%);
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+    box-shadow: 0 0 16px var(--light-purple);
+}
+.SoMe-links img{
+  transform: scale(1);
+  transition. 0.2s;
+}
+
+/* footer */
+.marquee-footer{
+    background-image:url("../img/gplay.png");
+}
+
+.footer{
+    border-top-style: solid;
+    border-width: 2px;
+    border-color: var(--white);
+    background-image: linear-gradient(var(--teal), var(--light-purple));
+
+}
+.footer-text{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 0;
+}
+footer h1, h2{
+    font-weight: normal;
+    color: var(--white);
+    text-shadow: 1px 2px 4px var(--black-grey);
+}

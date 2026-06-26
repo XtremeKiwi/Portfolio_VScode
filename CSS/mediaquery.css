@@ -1,0 +1,137 @@
+@media screen and (min-width: 1366px) {
+    /* portfolio piece top */
+    .portfolio-piece{
+        width: 480px;
+    }
+
+}
+/* about me */
+
+/* cv and fact */
+
+@media screen and (max-width: 1366px) {
+    /* cv and fact */
+    .cv-content{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .cv-and-fact-container{
+        grid-template-areas:
+        "cv"
+        "fact";
+        width: auto;
+    }
+    .fact-wrapper{
+        width: 90%;
+        margin: auto;
+    }
+    .other-experience-wrapper{
+        width: 90%;
+        margin: auto
+    }
+}
+
+@media screen and (max-width: 980px ){
+    /* cv download link */
+    .filler{
+        width: 0
+    }
+    .header{
+        display: block;
+    }
+
+    /* portfolio piece top */
+    .portfolio-piece{
+    width: 360px;
+}
+    .portfolio-piece-container{
+        grid-template-areas: none;
+    }
+
+    /* about me */
+    .about-me-intro{
+        width: 60%;
+        padding: 2rem;
+        font-size: 0.8rem;
+    }
+    .about-me-skills{
+        width: 70%;
+        border-radius: 1rem;
+        grid-template-areas:
+            "image image"
+            "adobe threeD"
+            "programming other";
+        gap: 0 10%;
+        justify-content: center;
+    }
+    .about-me-image{
+        margin-bottom: 1rem;
+    }
+    .about-me-skill-example{
+        font-size: 0.8rem;
+        width: 100%
+    }
+    .about-me-image-container{
+        justify-content: center;
+    }
+
+
+    /* cv and facts */
+    .fact-container{
+        width: 100%
+    }
+    .fact-list-items{
+        grid-template-columns: 1fr 1fr;
+        font-size: 0.8rem;
+    }
+    .fact-wrapper{
+        width: 90%;
+    }
+    /* cv and facts */
+    .cv-and-fact-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* cv*/
+    .cv-content{
+        width: 100%;
+    }
+    .cv-wrapper{
+        width:100%;
+    }
+    .cv-section-title-role-date{
+        display: block;
+        align-content: center;
+    }
+    .cv-section-date{
+        padding: 0 1rem 1rem 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 380px){
+    /* portfolio piece top */
+    .portfolio-piece{
+        width: 240px;
+        font-size: 0.8rem;
+        margin:  1rem auto;
+    }
+
+    /* about me */
+    .about-me-image{
+        width: 200px;
+        height: 200px;
+    }
+
+    /* CV */
+    .cv-section-title-date{
+        display: block;
+    }
+
+    /*  SoME links */
+    .SoMe-container{
+        gap: 10%;
+    }
+}

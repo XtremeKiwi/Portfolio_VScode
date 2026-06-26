@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/mediaquery.css">
+    <link rel="stylesheet" href="CSS/portfolioPiecesCSS.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <script defer type="module" src="./JS/app.js"></script>
+    <script defer src="./JS/data/portfolioData.js"></script>
+    <script defer src="JS/portfolioPieces.js"></script>
+    <script defer src="./JS/data/workExperienceData.js"></script>
+    <script defer src="JS/workExperiencePieces.js"></script>
+    <script defer src="./JS/data/otherExperienceData.js"></script>
+    <script defer src="JS/otherExperiencePieces.js"></script>
+    <title>Kiwi Portfolio</title>
+</head>
+
+<body>
+<!-- portfolio container -->
+<div class="portfolio-container">
+    <header class="header">
+        <div class="filler"></div>
+        <div class="title-and-contact">
+            <h1 class="header-name">{ KIWI-MAI }</h1>
+            <div >
+                <a class="contact-info" href="mailto:KiwiMai@protonmail.com"><marquee class="marquee-info"  direction="left" height="100%" scrollamount="4">
+                    KiwiMai@protonmail.com &emsp;&emsp;&emsp; +45 22 97 84 84
+                </marquee>
+                    <div class="contact-tooltip">
+                        <span>KiwiMai@protonmail.com</span>
+                        <span>+45 22 97 84 84</span>
+                    </div></a>
+            </div>
+        </div>
+        <div class="cv-download">
+<!--            <div class="download-link-cv">-->
+                <a  class="downloads" href="./PDFs/Kiwi%20Mai%20CV.pdf" download>
+                    <img src="./img/file-arrow-down-solid-full.svg"></a>
+<!--            </div>-->
+            <p>Download CV</p>
+
+        </div>
+    </header>
+
+    <div class="portfolio-piece-container">
+
+        <div class="portfolio-wrapper">
+            <div class="UI-webdev"> <h3>UI & Webdev</h3>
+                <div class="portfolio-grid1">
+                    <div class="portfolio-piece"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-wrapper">
+            <div class="threedee"> <h3>3D</h3>
+                <div class="portfolio-grid2">
+                    <div class="portfolio-piece"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-wrapper">
+            <div class="graphic-design"> <h3>Fysiske produkter & STLs</h3>
+                <div class="portfolio-grid3">
+                    <div class="portfolio-piece"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-wrapper">
+            <div class="concept-art"> <h3>Koncept kunst</h3>
+                <div class="portfolio-grid4">
+                    <div class="portfolio-piece"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- about me section -->
+<section class="about-me-container">
+
+    <div class="about-me-wrapper">
+        <div class="about-me-intro">
+            <h3>Hejsa og velkommen til min hjemmeside! Mit navn er Kiwi Mai. Jeg læser multimediedesign på Zealand Køge, og ønsker at læse videre til webudvikler efterfølgende</h3>
+        </div>
+    </div>
+
+    <div class="about-me-skills">
+        <div class="about-me-image-container image">
+            <img class="about-me-image" src="img/Potræt.png">
+        </div>
+
+        <div class="about-me-skill-example adobe">
+            <h3>Adobe</h3>
+            <ul>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Premier Pro</li>
+                <li>After Effects</li>
+                <li>InDesign</li>
+            </ul>
+        </div>
+
+        <div class="about-me-skill-example threeD">
+            <h3>3D</h3>
+            <ul>
+                <li>Blender</li>
+                <li>Substance Painter</li>
+                <li>Zbrush</li>
+                <li>Marvelous Designer</li>
+            </ul>
+        </div>
+
+        <div class="about-me-skill-example programming">
+            <h3>Programmering</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Vue.JS</li>
+            </ul>
+        </div>
+
+        <div class="about-me-skill-example other">
+            <h3>Andet</h3>
+            <ul>
+                <li>Mixcraft 9 (D.A.W)</li>
+                <li>Chitubox</li>
+                <li>WordPress</li>
+                <li>Figma</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- CV -->
+<div class="cv-and-fact-background">
+    <div class="cv-and-fact-container">
+        <div class="cv-container">
+            <div class="cv-wrapper">
+                <h2>Arbejdserfaring</h2>
+                <div class="cv-content work-experience"></div>
+            </div>
+        </div>
+
+        <div class="fact-container">
+            <div class="fact-wrapper">
+                <h2>Nogle fakta om mig</h2>
+                <div class="fact-list">
+                    <ul class="fact-list-items">
+                        <li>Jeg er selvlært 3D kunstner/designer</li>
+                        <li>Jeg har lavet nogle simple små spil i Unity og Godot</li>
+                        <li>Min mest dyrebare egendel er min Custom Gibson Flying V guitar</li>
+                        <li>Jeg syntes den bedste film til dato, er den originale Alien</li>
+                        <li>Jeg er kæmpe fan af Warhammer 40.000 universet</li>
+                        <li>Jeg er den stolte af ejer seks 3D printere</li>
+                        <li>Heavy Metal og Hård elektronisk musik er mine ynglings genre</li>
+                        <li>Jeg skal have to kopper sort kaffe om morgenen</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- other experience -->
+<section class="other-experience-container">
+    <div class="other-experience-wrapper">
+        <h2>Anden erfaring</h2>
+            <div class="other-experience-content other-experience"></div>
+    </div>
+
+</section>
+
+<!-- SoMe -->
+<section class="SoMe-container">
+    <div class="SoMe-links">
+        <a href="https://www.linkedin.com/in/kiwi-mai-54b0b81bb/" target="_blank">
+            <img src="img/linkedin-brands-solid-full.svg">
+            <p>LinkedIn</p>
+        </a>
+    </div>
+    <div  class="SoMe-links">
+        <a href="https://github.com/XtremeKiwi" target="_blank">
+            <img src="img/github-brands-solid-full.svg">
+            <p>Github</p>
+        </a>
+    </div>
+    <div  class="SoMe-links">
+        <a href="https://www.artstation.com/xtremekiwi" target="_blank">
+            <img src="img/artstation-brands-solid-full.svg">
+            <p>ArtStation</p>
+        </a>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+    <marquee width="100%" direction="left" height="100%" scrollamount="8" class="marquee-footer">
+        <div class="footer-text">
+            <h1>Kontakt mig! &emsp;</h1>
+            <h1>{ KIWI-MAI }&emsp;</h1>
+                <section>
+                    <h2>KiwiMai@protonmail.com </h2>
+                    <h2>+45 22 97 84 84</h2>
+                </section>
+        </div>
+    </marquee>
+</footer>
+
+
+</body>
+</html>
