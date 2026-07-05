@@ -1,23 +1,23 @@
 //UI %% Webdev //
 const portfolioPiece1 = [{
-    name: 'Zealand Butterfly',
-    img: 'img/portfolioImgs/zealandButterfly/Butterfly logo medium white.png',
-    alt: 'Butterfly',
-    href: 'portfolioPiecesDir/zealandbutterfly.html'
+    name: 'Homoware',
+    img: 'img/portfolioImgs/Homoware/Homoware portfolio hero.png',
+    alt: 'Homoware',
+    href: 'portfolioPiecesDir/homoware.html'
     },{
     name: 'GradeAid',
     img: 'img/portfolioImgs/gradeAid/GradeAid thumbnail 6.png',
     alt: 'GradeAid',
     href: 'portfolioPiecesDir/gradeAid.html'
     },{
-    name: 'Fjordenes bådebyggeri',
+    name: 'Fjordenes Bådebyggeri',
     img: 'img/portfolioImgs/fjordenesBådebyggeri/Fjordenes bådebyggeri banner 2.png',
     alt: 'Fjordenes bådebyggeri',
     href: 'portfolioPiecesDir/fjordenesBådebyggeri.html'
     },{
-    name: 'Zealand Studiestart',
-    img: 'img/portfolioImgs/zealandStudiestart/Zealand Studiestart logo 3.png',
-    alt: 'Zealand Studiestart',
+    name: 'Zealand Projekter',
+    img: 'img/portfolioImgs/zealandButterfly/Zealand Studiestart hero.png',
+    alt: 'Zealand Projekter',
     href: 'portfolioPiecesDir/zealandStudiestart.html'
     }]
 

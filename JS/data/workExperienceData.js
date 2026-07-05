@@ -1,13 +1,18 @@
 const workExperienceData =
     [{
+        companyName: "Squid Digital",
+        jobTitle: "",
+        date: "Jun 2026 - I dag",
+        jobDescription: " Mit eget hobby firma, hvor jeg designer og udvikler hjemmesider til SMBs, Ud over det laver jeg også grafisk design, markedsføringsmateriale og 3D modeller/animationer til virksomheder. Klik her for at se: <a href=\https://squiddigital.dk/\" target=\"_blank\">Squid Digital</a>"
+    },{
     companyName: "Zealand Connected Starters",
-    jobTitle: "Studiemedhjælper",
+    jobTitle: "Praktikant/Studentermedhjælper",
     date: "Jan 2026 - I dag",
     jobDescription: "Skabe markedsføringsmateriale, grafisk design, fysiske produkter og hjælpe til med events"
     },
     {
     companyName: "MakerSpace Zealand",
-    jobTitle: "Studiemedhjælper",
+    jobTitle: "Studentermedhjælper",
     date: "Nov 2024 - Jan 2026",
     jobDescription: "Hjælpe medstuderende med deres projekter, f.eks. 3D print, laser cutting, tøj design og mere."
     },

@@ -29,6 +29,13 @@
         width: 90%;
         margin: auto;
     }
+    .fact-list{
+        display: flex;
+        justify-content: center;
+    }
+    .fact-list-items{
+        grid-template-columns: 1fr 1fr;
+    }
     .other-experience-wrapper{
         width: 90%;
         margin: auto

@@ -450,7 +450,7 @@ h3{
 .fact-list-items{
     line-height: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr;*/
     gap: 1rem;
     list-style: circle;
     font-size: 12px;
