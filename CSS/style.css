@@ -301,8 +301,6 @@ h3{
     display: flex;
 }
 .about-me-image{
-
-    background-color: #555555;
     height: 256px;
     width: 256px;
     object-fit: cover;
@@ -311,6 +309,7 @@ h3{
     border-width: 2px;
     grid-area: image;
     justify-content: center;
+    background-color: var(--teal);
 }
 .image{
     grid-area: image;
@@ -449,12 +448,12 @@ h3{
 }
 
 .fact-list-items{
-    line-height: 2rem;
+    line-height: 1rem;
     display: grid;
     /*grid-template-columns: 1fr 1fr;*/
     gap: 1rem;
     list-style: circle;
-    font-size: 12px;
+    font-size: 14px;
 }
 .recommendation-wrapper{
     width: 400px;
@@ -463,7 +462,7 @@ h3{
 .recommendation{
     height: auto;
     padding: 1rem 1rem;
-    margin: 0 auto 3rem 0;
+    margin: 1rem auto 3rem 0;
     border-style: solid;
     border-color: var(--white);
     border-width: 2px;

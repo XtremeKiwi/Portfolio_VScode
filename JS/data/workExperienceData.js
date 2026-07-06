@@ -6,7 +6,7 @@ const workExperienceData =
         jobDescription: " Mit eget hobby firma, hvor jeg designer og udvikler hjemmesider til SMBs, Ud over det laver jeg også grafisk design, markedsføringsmateriale og 3D modeller/animationer til virksomheder. Klik her for at se: <a href=\https://squiddigital.dk/\" target=\"_blank\">Squid Digital</a>"
     },{
     companyName: "Zealand Connected Starters",
-    jobTitle: "Praktikant/Studentermedhjælper",
+    jobTitle: "Praktikant/ <br> Studentermedhjælper",
     date: "Jan 2026 - I dag",
     jobDescription: "Skabe markedsføringsmateriale, grafisk design, fysiske produkter og hjælpe til med events"
     },
