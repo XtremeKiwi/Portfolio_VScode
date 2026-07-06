@@ -29,12 +29,21 @@
         width: 90%;
         margin: auto;
     }
+    .recommendation-wrapper{
+        width: 90%;
+        margin: auto;
+    }
     .fact-list{
         display: flex;
         justify-content: center;
     }
     .fact-list-items{
         grid-template-columns: 1fr 1fr;
+    }
+    .recommendation{
+        width: 380px;
+        margin: 1rem 0 4rem 0;
+
     }
     .other-experience-wrapper{
         width: 90%;
@@ -107,6 +116,25 @@
     .fact-wrapper{
         width: 90%;
     }
+    .recommendation-wrapper{
+        width: 90%;
+        margin: auto;
+    }
+    .recommendation{
+        width: 100%;
+        margin: 1rem auto 4rem auto;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .recommendation-text{
+        padding: 1rem;
+    }
+    .recommendation button{
+        margin: 1rem;
+        width: 100px;
+    }
     /* cv and facts */
     .cv-and-fact-container{
         display: flex;
@@ -163,6 +191,13 @@
     .about-me-image{
         width: 200px;
         height: 200px;
+    }
+    .recommendation{
+        flex-direction: column;
+        width: 100%;
+    }
+    .recommendation-text{
+        padding: 1rem 1rem 0 1rem;
     }
 
     /* CV */

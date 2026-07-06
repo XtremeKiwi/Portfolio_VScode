@@ -430,6 +430,7 @@ h3{
     width: 400px;
     padding: 2rem 0 0 0;
 }
+
 .fact-wrapper h2{
     padding-bottom: 1rem;
     color: var(--white)
@@ -445,8 +446,8 @@ h3{
     background-color: var(--black-grey);
     background-image: url("../img/gplay.png");
     box-shadow: 8px 8px 16px var(--light-purple);
-
 }
+
 .fact-list-items{
     line-height: 2rem;
     display: grid;
@@ -454,6 +455,46 @@ h3{
     gap: 1rem;
     list-style: circle;
     font-size: 12px;
+}
+.recommendation-wrapper{
+    width: 400px;
+    padding: 2rem 0 0 0;
+}
+.recommendation{
+    height: auto;
+    padding: 1rem 1rem;
+    margin: 0 auto 3rem 0;
+    border-style: solid;
+    border-color: var(--white);
+    border-width: 2px;
+    border-radius: 1rem;
+    background-color: var(--black-grey);
+    background-image: url("../img/gplay.png");
+    box-shadow: 8px 8px 16px var(--light-purple);
+    display: flex;
+    flex-direction: column;
+}
+
+.recommendation a{
+    display: flex;
+    flex-direction: column;
+}
+.recommendation button{
+    background-color: var(--teal);
+    border-style: none;
+    border-radius: 32rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;;
+    color: var(--black-grey);
+    width: 200px;
+    margin:  1rem auto 0 auto;
+    transition: 0.2s;
+}
+.recommendation button:hover{
+    background-color: var(--light-purple);
+    transition: 0.2s;
+    box-shadow: 0 0 16px var(--light-purple);
+    color: var(--white);
 }
 
 /* other experience */
