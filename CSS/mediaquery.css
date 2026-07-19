@@ -186,6 +186,13 @@
         font-size: 0.8rem;
         margin:  1rem auto;
     }
+    .portfolio-piece p{
+        font-size: 0.8rem;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+    }
 
     /* about me */
     .about-me-image{
