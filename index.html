@@ -11,15 +11,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!--    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Iceland&family=Maven+Pro:wght@400..900&family=Orbitron:wght@400..900&family=Play:wght@400;700&family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+    
     <script defer type="module" src="./JS/app.js"></script>
+    
     <script defer src="./JS/data/portfolioData.js"></script>
-    <script defer src="JS/portfolioPieces.js"></script>
-    <script defer src="./JS/data/workExperienceData.js"></script>
-    <script defer src="JS/workExperiencePieces.js"></script>
     <script defer src="./JS/data/otherExperienceData.js"></script>
+    <script defer src="./JS/data/workExperienceData.js"></script>
+
+    <script defer src="JS/portfolioPieces.js"></script>
+    <script defer src="JS/workExperiencePieces.js"></script>
     <script defer src="JS/otherExperiencePieces.js"></script>
+    <script defer src="JS\wisdom.js"></script>
+    
     <title>Kiwi Portfolio</title> 
 </head>
 
@@ -121,12 +125,20 @@
                 </ul>
             </div>
         </div>
+
+    <section class="wisdom-generator-container">
+        <button id="wisdom-button" onclick="wisdomGenerator()">Ny visdom</button>
+        <span id="wisdom-span">Prøv lykken!</span>
     </section>
+
+    </section>
+
+
 
     <div class="portfolio-piece-container">
 
         <div class="portfolio-wrapper">
-            <div class="UI-webdev"> <h3>Webdev</h3>
+            <div class="UI-webdev"> <h3>Web Design</h3>
                 <div class="portfolio-grid1">
                     <div class="portfolio-piece"></div>
                 </div>

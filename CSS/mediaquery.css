@@ -104,6 +104,15 @@
         justify-content: center;
     }
 
+    .wisdom-generator-container{
+        width: 60%;
+        flex-direction: column;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+    .wisdom-generator-container span{
+        margin: 0.5rem 2rem 0 2rem;
+    }
+
 
     /* cv and facts */
     .fact-container{
@@ -170,6 +179,11 @@
     .contact-tooltip{
         font-size: 12px;
     }
+
+    .wisdom-generator-container{
+        display: none;
+    }
+
     .portfolio-downloads{
         font-size: 12px;
         padding: 0;

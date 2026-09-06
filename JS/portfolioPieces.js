@@ -1,6 +1,8 @@
 let pieceHTML1 = '';
+
 portfolioPiece1.forEach((piece) => {
-    pieceHTML1  += `
+    pieceHTML1  += 
+    `
     <a href="${piece.href}">
         <div class="portfolio-piece">
             <img class="portfolio-image" src="${piece.img}" alt="${piece.alt}">
@@ -11,8 +13,10 @@ portfolioPiece1.forEach((piece) => {
 })
 
 let pieceHTML2 = '';
+
 portfolioPiece2.forEach((piece) => {
-    pieceHTML2  += `
+    pieceHTML2  += 
+    `
     <a href="${piece.href}">
         <div class="portfolio-piece">
             <img class="portfolio-image" src="${piece.img}" alt="${piece.alt}">
@@ -23,8 +27,10 @@ portfolioPiece2.forEach((piece) => {
 })
 
 let pieceHTML3 = '';
+
 portfolioPiece3.forEach((piece) => {
-    pieceHTML3  += `
+    pieceHTML3  += 
+    `
     <a href="${piece.href}">
         <div class="portfolio-piece">
             <img class="portfolio-image" src="${piece.img}" alt="${piece.alt}">
@@ -36,8 +42,10 @@ portfolioPiece3.forEach((piece) => {
 
 
 let pieceHTML4 = '';
+
 portfolioPiece4.forEach((piece) => {
-    pieceHTML4  += `
+    pieceHTML4  += 
+    `
     <a href="${piece.href}">
         <div class="portfolio-piece">
             <img class="portfolio-image" src="${piece.img}" alt="${piece.alt}">
