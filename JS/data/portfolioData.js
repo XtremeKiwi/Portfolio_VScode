@@ -42,7 +42,7 @@ const portfolioPiece2 = [{
     },
     {
     name: 'Beholder',
-    img: '/img/portfolioImgs/beholder/Render test 2.webp',
+    img: 'img\portfolioImgs\beholder\Render_test_2.webp',
     alt: 'Beholder',
     href: 'portfolioPiecesDir/beholder.html'
 }]

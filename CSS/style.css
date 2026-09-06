@@ -10,6 +10,7 @@
     --grey: #3F3F3F;
     --dark-grey: #383838;
     --black-grey: #1E1E1E;
+    --black: #000000;
 }
 
 body {
@@ -23,6 +24,9 @@ body {
     margin: 0;
     padding: 0;
     text-decoration: none;
+
+    scrollbar-color: var(--teal) var(--black);
+    scrollbar-width: auto;
 }
 
 @keyframes fadeIn {
@@ -324,7 +328,24 @@ h3 {
 }
 
 .portfolio-wrapper {
-    padding-top: 16px;
+    padding-top: 0;
+    max-height: 550px;
+    background-color: var(--black-grey);
+    margin: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    border-radius: 16px;
+    border-style: solid;
+    border-color: var(--white);
+    border-width: 1px;
+}
+.portfolio-wrapper h3{
+    padding: 0.5rem;
+    background-image: url(../img/gplay.png);
+    width: 100%;
+    border-style: dashed;
+    border-width: 0 0 1px 0;
 }
 
 .portfolio-piece p {
@@ -411,7 +432,7 @@ h3 {
     grid-area: image;
     justify-content: center;
     background-color: var(--teal);
-    animation: fadeIn 1.5s
+    animation: fadeIn 1.5s;
 }
 
 .image {

@@ -30,3 +30,5 @@ function wisdomGenerator() {
 
     wisdomSpan.textContent = wisdomData[random]
 }
+
+document.addEventListener('DOMContentLoaded', wisdomGenerator());
