@@ -1,89 +1,122 @@
 @media screen and (min-width: 1366px) {
+
     /* portfolio piece top */
-    .portfolio-piece{
+    .portfolio-piece {
         width: 480px;
     }
 
 }
+
 /* about me */
 
 /* cv and fact */
 
 @media screen and (max-width: 1366px) {
 
-    .header{
+    .header {
         width: 800px;
     }
+
     /* cv and fact */
-    .cv-content{
+    .cv-content {
         width: 100%;
         margin-bottom: 0;
     }
-    .cv-and-fact-container{
+
+    .cv-and-fact-container {
         grid-template-areas:
-        "cv"
-        "fact";
+            "cv"
+            "fact";
         width: auto;
     }
-    .fact-wrapper{
+
+    .fact-wrapper {
         width: 90%;
         margin: auto;
     }
-    .recommendation-wrapper{
+
+    .recommendation-wrapper {
         width: 90%;
         margin: auto;
     }
-    .fact-list{
+
+    .fact-list {
         display: flex;
         justify-content: center;
     }
-    .fact-list-items{
+
+    .fact-list-items {
         grid-template-columns: 1fr 1fr;
     }
-    .recommendation{
+
+    .recommendation {
         width: 380px;
         margin: 1rem 0 4rem 0;
 
     }
-    .other-experience-wrapper{
+
+    .other-experience-container {
+        width: 90%;
+    }
+
+    .other-experience-wrapper {
         width: 90%;
         margin: auto
     }
+
+    .courses-wrapper {
+        margin: 0 1rem 0 auto;
+        width: 50%
+    }
+
+    .courses button {
+        width: auto;
+    }
 }
 
-@media screen and (max-width: 980px ){
+@media screen and (max-width: 980px) {
+
     /* cv download link */
-    .header{
+    .header {
         display: block;
         width: 100%;
     }
-    .header-name{
+
+    .header-name {
         font-size: 40px;
         padding-bottom: 0.5rem;
     }
-    .downloads{
+
+    .downloads {
         justify-content: space-evenly;
     }
-    .portfolio-downloads{
+
+    .portfolio-downloads {
         width: 400px;
         margin: auto;
     }
 
     /* portfolio piece top */
-    .portfolio-piece{
-    width: 360px;
-}
-    .portfolio-piece-container{
+    .portfolio-piece {
+        width: 360px;
+    }
+
+    .portfolio-piece-container {
         grid-template-areas: none;
     }
 
+    .portfolio-wrapper {
+        margin: 1rem 0;
+    }
+
     /* about me */
-    .about-me-intro{
+    .about-me-intro {
         width: 60%;
         padding: 2rem;
         font-size: 0.8rem;
     }
-    .about-me-skills{
+
+    .about-me-skills {
         width: 70%;
         border-radius: 1rem;
         grid-template-areas:
@@ -93,43 +126,51 @@
         gap: 0 10%;
         justify-content: center;
     }
-    .about-me-image{
+
+    .about-me-image {
         margin-bottom: 1rem;
     }
-    .about-me-skill-example{
+
+    .about-me-skill-example {
         font-size: 0.8rem;
         width: 100%
     }
-    .about-me-image-container{
+
+    .about-me-image-container {
         justify-content: center;
     }
 
-    .wisdom-generator-container{
+    .wisdom-generator-container {
         width: 60%;
         flex-direction: column;
         padding: 0.5rem 1rem 0.5rem 1rem;
     }
-    .wisdom-generator-container span{
+
+    .wisdom-generator-container span {
         margin: 0.5rem 2rem 0 2rem;
     }
 
 
     /* cv and facts */
-    .fact-container{
+    .fact-container {
         width: 100%
     }
-    .fact-list-items{
+
+    .fact-list-items {
         grid-template-columns: 1fr 1fr;
         font-size: 0.8rem;
     }
-    .fact-wrapper{
+
+    .fact-wrapper {
         width: 90%;
     }
-    .recommendation-wrapper{
+
+    .recommendation-wrapper {
         width: 90%;
         margin: auto;
     }
-    .recommendation{
+
+    .recommendation {
         width: 100%;
         margin: 1rem auto 4rem auto;
         padding: 0;
@@ -137,70 +178,81 @@
         justify-content: space-between;
         align-items: center;
     }
-    .recommendation-text{
+
+    .recommendation-text {
         padding: 1rem;
     }
-    .recommendation button{
+
+    .recommendation button {
         margin: 1rem;
         width: 100px;
     }
+
     /* cv and facts */
-    .cv-and-fact-container{
+    .cv-and-fact-container {
         display: flex;
         flex-direction: column;
     }
 
     /* cv*/
-    .cv-content{
+    .cv-content {
         width: 100%;
     }
-    .cv-wrapper{
-        width:100%;
+
+    .cv-wrapper {
+        width: 100%;
     }
-    .cv-section-title-role-date{
+
+    .cv-section-title-role-date {
         display: block;
         align-content: center;
     }
-    .cv-section-date{
+
+    .cv-section-date {
         padding: 0 1rem 1rem 1rem;
     }
 }
 
 
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 380px) {
 
-    .header{
+    .header {
         width: 100%;
     }
-    .marquee-info{
+
+    .marquee-info {
         width: 60%
     }
-    .contact-tooltip{
+
+    .contact-tooltip {
         font-size: 12px;
     }
 
-    .wisdom-generator-container{
+    .wisdom-generator-container {
         display: none;
     }
 
-    .portfolio-downloads{
+    .portfolio-downloads {
         font-size: 12px;
         padding: 0;
         width: 100%;
         margin-top: 2rem;
         flex-direction: column;
     }
-    .contact-tooltip{
+
+    .contact-tooltip {
         display: none;
     }
+
     /* portfolio piece top */
-    .portfolio-piece{
+    .portfolio-piece {
         width: 240px;
         font-size: 0.8rem;
-        margin:  1rem auto;
+        margin: 1rem auto;
     }
-    .portfolio-piece p{
+
+    .portfolio-piece p {
         font-size: 0.8rem;
         width: 100%;
         margin: 0;
@@ -209,25 +261,36 @@
     }
 
     /* about me */
-    .about-me-image{
+    .about-me-image {
         width: 200px;
         height: 200px;
     }
-    .recommendation{
+
+    .recommendation {
         flex-direction: column;
         width: 100%;
     }
-    .recommendation-text{
+
+    .recommendation-text {
         padding: 1rem 1rem 0 1rem;
     }
 
     /* CV */
-    .cv-section-title-date{
+    .cv-section-title-date {
         display: block;
     }
 
+    .other-experience-container {
+        display: block;
+    }
+
+    .courses-wrapper {
+        margin: 0 auto 4rem auto;
+        width: 100%;
+    }
+
     /*  SoME links */
-    .SoMe-container{
+    .SoMe-container {
         gap: 10%;
     }
 }

@@ -409,7 +409,7 @@ h3 {
 }
 
 .about-me-skills {
-    margin: 0 auto 4rem auto;
+    margin: 0 auto 2rem auto;
     width: 900px;
     height: auto;
     background-color: var(--black-grey);
