@@ -21,7 +21,14 @@ const wisdomData = [
     'Har du prøvet at slukke og tænde den igen?',
     'Hvad drikker Møller?',
     'Mor er ikke sur, Mor er skuffet',
-    'Det er potentielt en trold der træder på din bro'
+    'Det er potentielt en trold der træder på din bro',
+    'Skru aldrig forstærkeren helt op på 11',
+    'Kældedyr må gerne være på sofaen',
+    'Warcraft 3 er det bedste spil EVER',
+    'Kartoffel på pizza 👌',
+    'Designer tøj er overvurderet',
+    'Pas på med hvilke svampe du spiser i skoven',
+    'Lady Gaga er en DRONNING!'
 ];
 
 

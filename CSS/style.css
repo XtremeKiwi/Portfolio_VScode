@@ -10,7 +10,7 @@
     --grey: #3F3F3F;
     --dark-grey: #383838;
     --black-grey: #1E1E1E;
-    --black: #000000;
+    --black: #080808;
 }
 
 body {
@@ -30,8 +30,13 @@ body {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 h1 {
@@ -225,6 +230,10 @@ h3 {
     width: 300px;
     margin: auto;
     padding: 2px;
+    font-weight: bold;
+    color: var(--);
+    text-shadow: 0 2px 2px var(--light-purple);
+    border-color: var(--white);
 }
 
 .UI-webdev {
@@ -246,7 +255,7 @@ h3 {
 .portfolio-piece {
     width: 360px;
     height: 128px;
-    background-color: black;
+    background-color: var(--black);
     border-style: solid;
     border-width: 2px;
     border-radius: 2rem 2rem 2rem 2rem;
@@ -328,9 +337,8 @@ h3 {
 }
 
 .portfolio-wrapper {
-    padding-top: 0;
     max-height: 550px;
-    background-color: var(--black-grey);
+    background-color: var(--black);
     margin: 1rem;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -340,8 +348,10 @@ h3 {
     border-color: var(--white);
     border-width: 1px;
 }
-.portfolio-wrapper h3{
+
+.portfolio-wrapper h3 {
     padding: 0.5rem;
+    background-color: var(--black-grey);
     background-image: url(../img/gplay.png);
     width: 100%;
     border-style: dashed;
@@ -502,7 +512,8 @@ h3 {
     color: var(--white);
     font-weight: bold;
 }
-.wisdom-generator-container span{
+
+.wisdom-generator-container span {
     margin: 0 0 0 1rem;
     padding: 0.5rem;
     background-color: var(--black-grey);
@@ -692,15 +703,66 @@ h3 {
 }
 
 /* other experience */
-.other-experience-container {
-    width: 100%;
-    height: auto;
 
+.courses-wrapper {
+    width: 400px;
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.courses-text h3 {
+    text-align: center;
+}
+
+.courses-text p {
+    font-size: 14px;
+    padding: 1rem 0;
+}
+
+.courses button {
+    background-color: var(--teal);
+    border-style: none;
+    border-radius: 32rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--black-grey);
+    width: 200px;
+    transition: 0.2s;
+    font-size: 1rem;
+}
+
+.courses button:hover {
+    background-color: var(--light-purple);
+    transition: 0.2s;
+    box-shadow: 0 0 16px var(--light-purple);
+    color: var(--white);
+}
+
+.courses {
+    height: auto;
+    padding: 1rem 1rem;
+    margin: 1rem auto 0;
+    border-style: solid;
+    border-color: var(--white);
+    border-width: 2px;
+    border-radius: 1rem;
+    background-color: var(--black-grey);
+    background-image: url("../img/gplay.png");
+    box-shadow: 8px 8px 16px var(--light-purple);
+    text-align: center;
+}
+
+.other-experience-container {
+    width: 1366px;
+    height: auto;
+    display: flex;
+    margin: auto;
 }
 
 .other-experience-wrapper {
     width: 720px;
-    margin: 0 auto 4rem auto;
+    margin: 0 auto 4rem 2rem;
 }
 
 .other-experience-wrapper h2 {
