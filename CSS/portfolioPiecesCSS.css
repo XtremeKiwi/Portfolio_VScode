@@ -121,14 +121,17 @@ header{
 
 /* courses */
 .course-container{
-    width: 1300px;
+    max-width: 1300px;
+    min-width: auto;
     height: auto;
     margin: auto;
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .image-container-course{
     width: 600px;
+    margin: 1rem;
 }
 
 /* footer */
@@ -160,6 +163,10 @@ footer h1, h2{
         flex-direction: column;
         text-align: center;
     }
+    .image-container-course{
+    width: auto;
+    margin: 1rem auto;
+}
 }
 @media screen and (min-width: 980px){
     .image-container-tall{
