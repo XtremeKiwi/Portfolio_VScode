@@ -119,6 +119,18 @@ header{
     height: 100%
 }
 
+/* courses */
+.course-container{
+    width: 1300px;
+    height: auto;
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+.image-container-course{
+    width: 600px;
+}
+
 /* footer */
 .marquee-footer{
     background-image:url("../img/gplay.png");
