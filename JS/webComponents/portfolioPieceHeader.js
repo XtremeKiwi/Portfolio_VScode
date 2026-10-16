@@ -1,9 +1,12 @@
 class PortfolioPieceHeader extends HTMLElement {
     connectedCallback() {
+        const rootPrefix = this.hasAttribute("root-page") ? "./" : "../";
+        const portfolioPrefix = this.hasAttribute("root-page") ? "./portfolioPiecesDir/" : "./";
+
         this.innerHTML = `
             <header id="header-portfolio">
                 <div id="back-button">
-                    <a href="../index.html"><button id="return-button"><</button>
+                    <a href="${rootPrefix}index.html"><button id="return-button"><</button>
                         <h4>Tilbage</h4></a>
                 </div>
 
@@ -19,18 +22,26 @@ class PortfolioPieceHeader extends HTMLElement {
                     aria-hidden="true" inert>
                     <h2>Portfolio pieces</h2>
                     <ul>
-                        <li><a href="./beholder.html">Beholder</a></li>
-                        <li><a href="./demonChicken.html">Demon Chicken</a></li>
-                        <li><a href="./dysphoriaMiniatures.html">Dysphoria Miniatures</a></li>
-                        <li><a href="./dysphoriaMiniaturesSTLs.html">Dysphoria Miniatures STLs</a></li>
-                        <li><a href="./fjordenesBådebyggeri.html">Fjordenes Bådebyggeri</a></li>
-                        <li><a href="./gradeAid.html">GradeAid</a></li>
-                        <li><a href="./hjemmeDecoration.html">Hjemme Dekoration og Smykker</a></li>
-                        <li><a href="./homoware.html">Homoware</a></li>
-                        <li><a href="./nerfThis.html">Nerf This</a></li>
-                        <li><a href="./svampenBob.html">Svampen Bob</a></li>
-                        <li><a href="./zealandButterfly.html">Zealand Butterfly</a></li>
-                        <li><a href="./zealandStudiestart.html">Zealand Studiestart</a></li>
+                        <li><a href="${portfolioPrefix}beholder.html">Beholder</a></li>
+                        <li><a href="${portfolioPrefix}demonChicken.html">Demon Chicken</a></li>
+                        <li><a href="${portfolioPrefix}dysphoriaMiniatures.html">Dysphoria Miniatures</a></li>
+                        <li><a href="${portfolioPrefix}dysphoriaMiniaturesSTLs.html">Dysphoria Miniatures STLs</a></li>
+                        <li><a href="${portfolioPrefix}fjordenesBådebyggeri.html">Fjordenes Bådebyggeri</a></li>
+                        <li><a href="${portfolioPrefix}gradeAid.html">GradeAid</a></li>
+                        <li><a href="${portfolioPrefix}hjemmeDecoration.html">Hjemme Dekoration og Smykker</a></li>
+                        <li><a href="${portfolioPrefix}homoware.html">Homoware</a></li>
+                        <li><a href="${portfolioPrefix}nerfThis.html">Nerf This</a></li>
+                        <li><a href="${portfolioPrefix}svampenBob.html">Svampen Bob</a></li>
+                        <li><a href="${portfolioPrefix}zealandButterfly.html">Zealand Butterfly</a></li>
+                        <li><a href="${portfolioPrefix}zealandStudiestart.html">Zealand Studiestart</a></li>
+                    </ul>
+                    <h2>Anbefalinger</h2>
+                    <ul>
+                        <li><a href="${rootPrefix}PDFs/anbefaling Kiwi.pdf" download>Download anbefaling (PDF)</a></li>
+                    </ul>
+                    <h2>Kursus beviser</h2>
+                    <ul>
+                        <li><a href="${rootPrefix}courses.html">Kursus beviser</a></li>
                     </ul>
                 </nav>
             </div>

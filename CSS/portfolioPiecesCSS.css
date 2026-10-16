@@ -195,7 +195,7 @@ header{
 /* image box */
 .image-container{
     background-color: var(--black-grey);
-    background-image: url("img/gplay.png");
+    background-image: url("../img/gplay.png");
     border-style: solid;
     border-width: 2px;
     border-color: var(--white);
