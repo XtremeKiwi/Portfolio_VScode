@@ -1,5 +1,6 @@
 import {mediaQuery} from "./mediaQuery.js";
 import "./webComponents/header.js";
+import "./webComponents/portfolioPieceHeader.js";
 import "./webComponents/aboutMe.js";
 import "./webComponents/portfolioPieceContainer.js";
 import "./webComponents/cvSection.js";

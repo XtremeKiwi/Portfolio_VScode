@@ -31,6 +31,9 @@ h1{
     font-size: 54px;
     font-weight: normal;
 }
+portfolio-piece-header {
+    display: contents;
+}
 a{
     color: var(--teal)
 }
@@ -173,4 +176,3 @@ footer h1, h2{
         width: 40%;
     }
 }
-
