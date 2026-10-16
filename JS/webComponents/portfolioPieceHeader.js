@@ -13,6 +13,10 @@ class PortfolioPieceHeader extends HTMLElement {
                 <h1 id="header-title" class="header-name">{ KIWI-MAI }</h1>
                 <div id="gap-fill"></div>
             </header>
+            <div class="portfolio-scroll-progress" role="progressbar" aria-label="Page scroll progress"
+                aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                <span class="portfolio-scroll-progress-fill"></span>
+            </div>
             <div class="portfolio-menu">
                 <button class="portfolio-menu-toggle" type="button" aria-expanded="false"
                     aria-controls="portfolio-piece-menu-panel">
@@ -50,6 +54,20 @@ class PortfolioPieceHeader extends HTMLElement {
         const menu = this.querySelector(".portfolio-menu");
         const toggle = this.querySelector(".portfolio-menu-toggle");
         const panel = this.querySelector(".portfolio-menu-panel");
+        const progressBar = this.querySelector(".portfolio-scroll-progress");
+        const progressFill = this.querySelector(".portfolio-scroll-progress-fill");
+
+        const updateScrollProgress = () => {
+            const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = scrollableHeight > 0
+                ? Math.min(100, Math.max(0, (window.scrollY / scrollableHeight) * 100))
+                : 0;
+            const roundedProgress = Math.round(progress);
+
+            progressFill.style.transform = `scaleX(${progress / 100})`;
+            progressBar.setAttribute("aria-valuenow", String(roundedProgress));
+            progressBar.setAttribute("aria-valuetext", `${roundedProgress}%`);
+        };
 
         const onDocumentClick = (event) => {
             if (!this.contains(event.target)) {
@@ -89,11 +107,18 @@ class PortfolioPieceHeader extends HTMLElement {
             }
         });
 
+        window.addEventListener("scroll", updateScrollProgress, { passive: true });
+        window.addEventListener("resize", updateScrollProgress);
+        updateScrollProgress();
+
+        this._updateScrollProgress = updateScrollProgress;
         this._setMenuOpen = setMenuOpen;
     }
 
     disconnectedCallback() {
         this._setMenuOpen(false);
+        window.removeEventListener("scroll", this._updateScrollProgress);
+        window.removeEventListener("resize", this._updateScrollProgress);
     }
 }
 
