@@ -59,6 +59,34 @@ h3 {
     background-attachment: fixed;
 }
 
+portfolio-header {
+    display: contents;
+}
+
+about-me {
+    display: contents;
+}
+
+portfolio-piece-container {
+    display: contents;
+}
+
+cv-section {
+    display: contents;
+}
+
+other-experience-container {
+    display: contents;
+}
+
+social-links {
+    display: contents;
+}
+
+portfolio-footer {
+    display: contents;
+}
+
 .marquee-info {
     background-image: url("../img/gplay.png");
     background-color: var(--black-grey);
@@ -105,7 +133,10 @@ h3 {
 }
 
 .title-and-contact {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
 }
 
 .contact-info {
