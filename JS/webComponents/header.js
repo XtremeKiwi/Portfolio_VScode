@@ -37,7 +37,78 @@ class PortfolioHeader extends HTMLElement {
                     </div>
                 </div>
             </header>
+            <div class="portfolio-menu">
+                <button class="portfolio-menu-toggle" type="button" aria-expanded="false"
+                    aria-controls="portfolio-menu-panel">
+                    Portfolio pieces
+                </button>
+                <nav class="portfolio-menu-panel" id="portfolio-menu-panel" aria-label="Portfolio pieces" aria-hidden="true" inert>
+                    <h2>Portfolio pieces</h2>
+                    <ul>
+                        <li><a href="./portfolioPiecesDir/beholder.html">Beholder</a></li>
+                        <li><a href="./portfolioPiecesDir/demonChicken.html">Demon Chicken</a></li>
+                        <li><a href="./portfolioPiecesDir/dysphoriaMiniatures.html">Dysphoria Miniatures</a></li>
+                        <li><a href="./portfolioPiecesDir/dysphoriaMiniaturesSTLs.html">Dysphoria Miniatures STLs</a></li>
+                        <li><a href="./portfolioPiecesDir/fjordenesBådebyggeri.html">Fjordenes Bådebyggeri</a></li>
+                        <li><a href="./portfolioPiecesDir/gradeAid.html">GradeAid</a></li>
+                        <li><a href="./portfolioPiecesDir/hjemmeDecoration.html">Hjemme Dekoration og Smykker</a></li>
+                        <li><a href="./portfolioPiecesDir/homoware.html">Homoware</a></li>
+                        <li><a href="./portfolioPiecesDir/nerfThis.html">Nerf This</a></li>
+                        <li><a href="./portfolioPiecesDir/svampenBob.html">Svampen Bob</a></li>
+                        <li><a href="./portfolioPiecesDir/zealandButterfly.html">Zealand Butterfly</a></li>
+                        <li><a href="./portfolioPiecesDir/zealandStudiestart.html">Zealand Studiestart</a></li>
+                    </ul>
+                </nav>
+            </div>
         `;
+
+        const menu = this.querySelector(".portfolio-menu");
+        const toggle = this.querySelector(".portfolio-menu-toggle");
+        const panel = this.querySelector(".portfolio-menu-panel");
+
+        const setMenuOpen = (isOpen) => {
+            menu.classList.toggle("is-open", isOpen);
+            toggle.setAttribute("aria-expanded", String(isOpen));
+            panel.setAttribute("aria-hidden", String(!isOpen));
+            panel.inert = !isOpen;
+
+            if (isOpen) {
+                document.addEventListener("click", onDocumentClick);
+                document.addEventListener("keydown", onDocumentKeydown);
+            } else {
+                document.removeEventListener("click", onDocumentClick);
+                document.removeEventListener("keydown", onDocumentKeydown);
+            }
+        };
+
+        const onDocumentClick = (event) => {
+            if (!this.contains(event.target)) {
+                setMenuOpen(false);
+            }
+        };
+
+        const onDocumentKeydown = (event) => {
+            if (event.key === "Escape") {
+                setMenuOpen(false);
+                toggle.focus();
+            }
+        };
+
+        toggle.addEventListener("click", () => {
+            setMenuOpen(toggle.getAttribute("aria-expanded") !== "true");
+        });
+
+        panel.addEventListener("click", (event) => {
+            if (event.target instanceof Element && event.target.closest("a")) {
+                setMenuOpen(false);
+            }
+        });
+
+        this._setMenuOpen = setMenuOpen;
+    }
+
+    disconnectedCallback() {
+        this._setMenuOpen(false);
     }
 }
 
