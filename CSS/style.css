@@ -369,7 +369,7 @@ portfolio-footer {
 
 .portfolio-wrapper {
     max-height: 550px;
-    background-color: var(--teal);
+    background-color: var(--black-grey);
     margin: 1rem;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -429,7 +429,7 @@ portfolio-footer {
 .about-me-container {
     width: 100%;
     height: auto;
-    background-color: var(--teal);
+    background-color: var(--black-grey);
     border-color: var(--white);
     border-style: solid none solid none;
     border-width: 2px;

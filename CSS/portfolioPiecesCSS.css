@@ -210,6 +210,25 @@ header{
     line-height: 2rem;
 }
 
+.portfolio-subject{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.portfolio-subject p{
+    background-color: var(--teal);
+    padding:  2px 8px;
+    border-style: solid;
+    border-radius: 16px;
+    border-width: 1px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+
 
 /* image box */
 .image-container{
@@ -299,5 +318,19 @@ footer h1, h2{
 @media screen and (min-width: 980px){
     .image-container-tall{
         width: 40%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .portfolio-subject {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .portfolio-subject p {
+        padding: 2px 6px;
+        font-size: 0.85rem;
     }
 }

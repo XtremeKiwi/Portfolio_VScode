@@ -45,18 +45,18 @@ class PortfolioHeader extends HTMLElement {
                 <nav class="portfolio-menu-panel" id="portfolio-menu-panel" aria-label="Portfolio pieces" aria-hidden="true" inert>
                     <h2>Portfolio pieces</h2>
                     <ul>
-                        <li><a href="./portfolioPiecesDir/beholder.html">Beholder</a></li>
-                        <li><a href="./portfolioPiecesDir/demonChicken.html">Demon Chicken</a></li>
-                        <li><a href="./portfolioPiecesDir/dysphoriaMiniatures.html">Dysphoria Miniatures</a></li>
-                        <li><a href="./portfolioPiecesDir/dysphoriaMiniaturesSTLs.html">Dysphoria Miniatures STLs</a></li>
-                        <li><a href="./portfolioPiecesDir/fjordenesBådebyggeri.html">Fjordenes Bådebyggeri</a></li>
-                        <li><a href="./portfolioPiecesDir/gradeAid.html">GradeAid</a></li>
-                        <li><a href="./portfolioPiecesDir/hjemmeDecoration.html">Hjemme Dekoration og Smykker</a></li>
                         <li><a href="./portfolioPiecesDir/homoware.html">Homoware</a></li>
-                        <li><a href="./portfolioPiecesDir/nerfThis.html">Nerf This</a></li>
-                        <li><a href="./portfolioPiecesDir/svampenBob.html">Svampen Bob</a></li>
-                        <li><a href="./portfolioPiecesDir/zealandButterfly.html">Zealand Butterfly</a></li>
+                        <li><a href="./portfolioPiecesDir/gradeAid.html">GradeAid</a></li>
+                        <li><a href="./portfolioPiecesDir/fjordenesBådebyggeri.html">Fjordenes Bådebyggeri</a></li>
                         <li><a href="./portfolioPiecesDir/zealandStudiestart.html">Zealand Studiestart</a></li>
+                        <li><a href="./portfolioPiecesDir/zealandButterfly.html">Zealand Butterfly</a></li>
+                        <li><a href="./portfolioPiecesDir/svampenBob.html">Svampen Bob</a></li>
+                        <li><a href="./portfolioPiecesDir/nerfThis.html">Nerf This</a></li>
+                        <li><a href="./portfolioPiecesDir/demonChicken.html">Demon Chicken</a></li>
+                        <li><a href="./portfolioPiecesDir/beholder.html">Beholder</a></li>
+                        <li><a href="./portfolioPiecesDir/hjemmeDecoration.html">Hjemme Dekoration og Smykker</a></li>
+                        <li><a href="./portfolioPiecesDir/dysphoriaMiniaturesSTLs.html">Dysphoria Miniatures STLs</a></li>
+                        <li><a href="./portfolioPiecesDir/dysphoriaMiniatures.html">Dysphoria Miniatures</a></li>
                     </ul>
                 </nav>
             </div>

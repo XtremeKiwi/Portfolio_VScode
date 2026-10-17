@@ -26,18 +26,18 @@ class PortfolioPieceHeader extends HTMLElement {
                     aria-hidden="true" inert>
                     <h2>Portfolio pieces</h2>
                     <ul>
-                        <li><a href="${portfolioPrefix}beholder.html">Beholder</a></li>
-                        <li><a href="${portfolioPrefix}demonChicken.html">Demon Chicken</a></li>
-                        <li><a href="${portfolioPrefix}dysphoriaMiniatures.html">Dysphoria Miniatures</a></li>
-                        <li><a href="${portfolioPrefix}dysphoriaMiniaturesSTLs.html">Dysphoria Miniatures STLs</a></li>
-                        <li><a href="${portfolioPrefix}fjordenesBådebyggeri.html">Fjordenes Bådebyggeri</a></li>
-                        <li><a href="${portfolioPrefix}gradeAid.html">GradeAid</a></li>
-                        <li><a href="${portfolioPrefix}hjemmeDecoration.html">Hjemme Dekoration og Smykker</a></li>
                         <li><a href="${portfolioPrefix}homoware.html">Homoware</a></li>
-                        <li><a href="${portfolioPrefix}nerfThis.html">Nerf This</a></li>
-                        <li><a href="${portfolioPrefix}svampenBob.html">Svampen Bob</a></li>
-                        <li><a href="${portfolioPrefix}zealandButterfly.html">Zealand Butterfly</a></li>
+                        <li><a href="${portfolioPrefix}gradeAid.html">GradeAid</a></li>
+                        <li><a href="${portfolioPrefix}fjordenesBådebyggeri.html">Fjordenes Bådebyggeri</a></li>
                         <li><a href="${portfolioPrefix}zealandStudiestart.html">Zealand Studiestart</a></li>
+                        <li><a href="${portfolioPrefix}zealandButterfly.html">Zealand Butterfly</a></li>
+                        <li><a href="${portfolioPrefix}svampenBob.html">Svampen Bob</a></li>
+                        <li><a href="${portfolioPrefix}nerfThis.html">Nerf This</a></li>
+                        <li><a href="${portfolioPrefix}demonChicken.html">Demon Chicken</a></li>
+                        <li><a href="${portfolioPrefix}beholder.html">Beholder</a></li>
+                        <li><a href="${portfolioPrefix}hjemmeDecoration.html">Hjemme Dekoration og Smykker</a></li>
+                        <li><a href="${portfolioPrefix}dysphoriaMiniaturesSTLs.html">Dysphoria Miniatures STLs</a></li>
+                        <li><a href="${portfolioPrefix}dysphoriaMiniatures.html">Dysphoria Miniatures</a></li>
                     </ul>
                     <h2>Anbefalinger</h2>
                     <ul>
